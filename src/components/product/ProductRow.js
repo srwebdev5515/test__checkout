@@ -2,7 +2,8 @@ const styles = {
     productRow: {
         display: 'flex',
         padding: '10px 15px',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderBottom: '1px solid #eee',
     },
     productPrice: {
         width: 50,
