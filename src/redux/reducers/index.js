@@ -2,6 +2,7 @@ import { persistCombineReducers } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'
 
 import products from './product';
+import cart from './cart';
 
 const persistConfig = {
   key: 'root',
@@ -11,4 +12,5 @@ const persistConfig = {
 
 export default persistCombineReducers(persistConfig, {
   products,
+  cart,
 });

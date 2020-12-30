@@ -8,7 +8,7 @@ const styles = {
     }
 };
 
-export default ({ title, left, right, onLeft, onRight }) => (
+const Header = ({ title, left, right, onLeft, onRight }) => (
     <div className="row" style={styles.header}>
         <div className="col-3" style={styles.cursor} onClick={onLeft}>
             {left}
@@ -16,8 +16,10 @@ export default ({ title, left, right, onLeft, onRight }) => (
         <div className="col-6">
             <h2 className="text-center">{title}</h2>
         </div>
-        <div className="col-3" style={styles.cursor} onClick={onRight}>
+        <div className="col-3 text-right" style={styles.cursor} onClick={onRight}>
             {right}
         </div>
     </div>
-)
+);
+
+export default Header;

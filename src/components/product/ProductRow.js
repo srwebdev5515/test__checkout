@@ -1,7 +1,7 @@
 const styles = {
     productRow: {
         display: 'flex',
-        padding: '10px 20px',
+        padding: '10px 15px',
         alignItems: 'center'
     },
     productPrice: {
@@ -22,7 +22,7 @@ const styles = {
     }
 };
 
-export default ({ product, onProductAdd }) => (
+const ProductRow = ({ product, onProductAdd }) => (
     <div style={styles.productRow}>
         <div>{product.name}</div>
         <div style={styles.productPrice}>${product.price}</div>
@@ -31,3 +31,5 @@ export default ({ product, onProductAdd }) => (
         </div>
     </div>
 )
+
+export default ProductRow;
