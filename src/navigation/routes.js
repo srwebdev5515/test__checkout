@@ -5,6 +5,7 @@ import { Products } from '../screens/Products'
 
 export const BASE_ROUTES = {
   products: '/',
+  cart: '/cart',
 }
 
 const BaseRoutes = () => (

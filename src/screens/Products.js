@@ -24,7 +24,7 @@ export const Products = () => {
     return (
         <div className="container">
             <Header title="Products" right={<CartButton />}></Header>
-            {products?.map(p => <ProductRow product={p} onProductAdd={() => onProductAdd(p)} />)}
+            {products?.map(p => <ProductRow product={p} key={p.sku} onProductAdd={() => onProductAdd(p)} />)}
         </div>
     );
 }
